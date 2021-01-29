@@ -46,13 +46,23 @@ const App = () => {
 
   }
 
+  const completeTodo = (id) => {
+    const todoToUpdate = todos.findIndex(todo => todo.id === id);
+    const updatedTodoList = [...todos];
+    updatedTodoList[todoToUpdate].complete = !updatedTodoList[todoToUpdate].complete;
+    setTodos(updatedTodoList);
+  }
+
+
+
+
   return (
     <div className="todo-container">
       <h1 className="header">To Do List</h1>
       <div>
         <Input className='header' addToDo={addTodo} />
       </div>
-      <TodoList todos={todos} onDelete={deleteToDo} />
+      <TodoList todos={todos} onDelete={deleteToDo} onUpdate={completeTodo} />
 
     </div>
   )

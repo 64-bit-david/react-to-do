@@ -1,7 +1,7 @@
 import { FaTimesCircle, FaCheckCircle } from 'react-icons/fa';
 
 
-const SingleTodo = ({ todo, onDelete }) => {
+const SingleTodo = ({ todo, onDelete, onUpdate }) => {
 
 
 
@@ -12,7 +12,7 @@ const SingleTodo = ({ todo, onDelete }) => {
           className={`todo-text ${todo.complete ? 'complete' : ''}`}
         >{todo.text}</h1>
         <div className="todo-icons">
-          <FaCheckCircle className='check-icon' />
+          <FaCheckCircle className='check-icon' onClick={() => onUpdate(todo.id)} />
           <FaTimesCircle className="delete-icon" onClick={() => onDelete(todo.id)} />
         </div>
       </div>
