@@ -17,11 +17,16 @@ const TodoList = () => {
       id: 3,
       text: 'Work Meetup',
       date: 'Monday, 6pm'
+    },
+    {
+      id: 4,
+      text: 'Deworm the cat',
+      date: 'Friday, 6pm'
     }
   ]);
 
   return (
-    <div>
+    <div className="todo-list">
       {todos.map(todo => {
         return <SingleTodo todo={todo} key={todo.id} />
       })}

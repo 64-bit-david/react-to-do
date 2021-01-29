@@ -1,4 +1,77 @@
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+}
+
 .form{
   display: inline;
 }
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  margin: 5rem 0 0 5rem;
+  padding: 1rem 2rem;
+  border-radius: 9px;
+  border: 1px solid #333;
+  background-color: azure;
+}
+
+.header {
+  font-size: 3rem;
+}
+
+.todo-text {
+  margin: 0;
+  padding: 0;
+  /* text-decoration: line-through; */
+}
+
+
+
+.todo-date {
+  margin: 0;
+  padding: 0;
+}
+
+.todo-list {
+  margin: 2rem 0;
+}
+
+.single-todo {
+  /* border: 1px solid #333; */
+  /* margin: .5rem; */
+  border-radius: 5px;
+  padding: .5rem;
+  background-color: rgb(196, 219, 228);
+}
+
+.single-todo:nth-child(even) {
+  background-color: inherit;
+}
+
+.todo-text-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.check-icon {
+  color: green;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.delete-icon {
+  color: red;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+
 

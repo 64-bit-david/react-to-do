@@ -10,10 +10,12 @@ import TodoList from '../TodoList';
 const App = () => {
 
   return (
-    <div>
-      <h1>To Do List</h1>
-      <Input className='header' />
-      <Button />
+    <div className="todo-container">
+      <h1 className="header">To Do List</h1>
+      <div>
+        <Input className='header' />
+        <Button />
+      </div>
       <TodoList />
 
     </div>
